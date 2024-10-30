@@ -1,0 +1,177 @@
+input[type="text"],
+input[type="number"],
+select {
+	width: 400px;
+	margin: 0;
+	box-sizing: border-box;
+	vertical-align: top;
+	min-height: 30px;
+}
+
+label.form-switch input[type="checkbox"] {
+	display: none;
+}
+
+label.form-switch span:after,
+label.form-switch span:before {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 30px;
+	height: 30px;
+	top: 2px;
+}
+
+label.form-switch input[type="checkbox"]:checked+span:after {
+	right: 2px;
+	left: auto;
+	/* content: 'ON'; */
+}
+
+label.form-switch input[type="checkbox"]+span:after {
+	/* content: 'OFF'; */
+	font-size: 9px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+}
+
+label.form-switch span:after {
+	left: 2px;
+	border-radius: 30px;
+	background: #fff;
+	transition: all .2s ease;
+}
+
+label.form-switch input[type="checkbox"]:checked+span {
+	background-color: #03A9F4;
+	color: #03A9F4;
+}
+
+label.form-switch span {
+	position: relative;
+	display: inline-block;
+	border-radius: 23px;
+	box-sizing: border-box;
+	padding: 4px;
+	width: 60px;
+	height: 34px;
+	background: #a8bece;
+	vertical-align: middle;
+	outline: 0;
+	cursor: pointer;
+	transition: all .4s ease;
+	box-shadow: none;
+	color: #87a6bc;
+	text-align: right;
+}
+
+a.jt__button {
+	text-align: center;
+	text-decoration: none;
+}
+
+.jt__button {
+	width: 130px;
+	height: 40px;
+	padding: 10px 25px;
+	border: 2px solid #03A9F4;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+
+button.jt__button {
+	padding: 0px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.jt__button {
+	background: #03A9F4;
+	color: #fff;
+	font-size: 13px;
+	line-height: 42px;
+	padding: 0px;
+	border: none;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.jt__button span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.jt__button:before,
+.jt__button:after {
+	position: absolute;
+	content: "";
+	height: 0%;
+	width: 2px;
+	background: #03A9F4;
+}
+
+.jt__button:before {
+	right: 0;
+	top: 0;
+	transition: all 500ms ease;
+}
+
+.jt__button:after {
+	left: 0;
+	bottom: 0;
+	transition: all 500ms ease;
+}
+
+.jt__button:hover {
+	color: #03A9F4;
+	background: transparent;
+}
+
+.jt__button:hover:before {
+	transition: all 500ms ease;
+	height: 100%;
+}
+
+.jt__button:hover:after {
+	transition: all 500ms ease;
+	height: 100%;
+}
+
+.jt__button span:before,
+.jt__button span:after {
+	position: absolute;
+	content: "";
+	background: #03A9F4;
+}
+
+.jt__button span:before {
+	left: 0;
+	top: 0;
+	width: 0%;
+	height: 2px;
+	transition: all 500ms ease;
+}
+
+.jt__button span:after {
+	right: 0;
+	bottom: 0;
+	width: 0%;
+	height: 2px;
+	transition: all 500ms ease;
+}
+
+.jt__button span:hover:before {
+	width: 100%;
+}
+
+.jt__button span:hover:after {
+	width: 100%;
+}
